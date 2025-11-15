@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cybersecurity Awareness: Terminal Assessment</title>
+
+<!-- Google Fonts via HTTPS -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary: #0b74de;
+    --primary-dark: #095abf;
+    --accent: #00e6ff;
+    --bg: #e6f0ff;
+    --card: #ffffff;
+    --text-light: #ffffff;
+    --muted: #6b7280;
+  }
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin:0;
+    background: var(--bg);
+    scroll-behavior: smooth;
+  }
+
+  /* Cover Section */
+  .cover {
+    background: url('https://thumbs.dreamstime.com/b/neon-themed-digital-wallpaper-light-trails-colorful-bokeh-depicting-future-technology-cloud-storage-cyberspace-349181277.jpg') center/cover no-repeat;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color: var(--text-light);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    animation: fadeIn 2s ease-in;
+  }
+  .cover h1 { font-size: 52px; margin: 0 0 10px 0; animation: slideDown 1.5s ease-out; }
+  .cover p { font-size: 22px; margin: 4px 0; animation: fadeIn 2s ease-in; }
+  .btn {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    animation: slideUp 1.5s ease-out;
+  }
+  .btn:hover {background: var(--primary-dark);}
+
+  @keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+  @keyframes slideDown {from {transform: translateY(-50px); opacity:0;} to {transform:translateY(0); opacity:1;}}
+  @keyframes slideUp {from {transform: translateY(50px); opacity:0;} to {transform:translateY(0); opacity:1;}}
+
+  /* Container and Accordion */
+  .container {max-width: 960px; margin:auto; padding:20px;}
+  .accordion {background: var(--card); margin:20px 0; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+  .accordion-header {padding:16px; cursor:pointer; font-weight:bold; color: var(--primary); display:flex; justify-content: space-between; align-items:center; font-size: 20px; transition: background 0.2s; border-radius:10px;}
+  .accordion-header:hover {background: rgba(11,116,222,0.05);}
+  .accordion-content {padding:16px; display:none; border-top:1px solid #ddd; animation: fadeIn 0.5s;}
+  .accordion-content img {max-width:100%; height:auto; border-radius:8px; margin:10px 0;}
+  .accordion-header::after {content:'\25BC'; font-size:16px; transition: transform 0.3s;}
+  .accordion-header.active::after {transform: rotate(180deg);}
+  ul {margin:10px 0 16px 20px;}
+  li {margin-bottom:8px;}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>Cybersecurity Awareness</h1>
+  <p>Terminal Assessment — The Contemporary World (S1101)</p>
+  <p>Submitted by: Geneveve Apostol, Gjoshain Aghon, Jenny Rose Villaroza</p>
+  <a class="btn" href="#assessment">Start Assessment</a>
+</div>
+
+<div id="assessment" class="container">
+
+  <!-- Background / Understanding -->
+  <div class="accordion">
+    <div class="accordion-header">1. Background / Understanding the Issue</div>
+    <div class="accordion-content">
+      <p>In today's highly digitalized world, students are increasingly exposed to online risks, yet many lack the knowledge and skills to protect themselves. Cybersecurity awareness refers to understanding online threats, safe practices, and responsible behavior on the internet. Among students, common unsafe habits include using weak or repeated passwords, sharing personal information on unsecured platforms, clicking on phishing emails, and neglecting software updates. These behaviors can lead to identity theft, financial loss, and breaches of personal privacy.</p>
+      <p>Globally, countries like the United States, Singapore, and Japan have integrated cybersecurity modules into their school curriculums, ensuring that students build a solid foundation in digital safety. In contrast, developing countries like the Philippines often rely on isolated campaigns or seminars, leaving gaps in understanding. Consequently, students may underestimate threats, assuming that cyberattacks only target large organizations or professionals.</p>
+      <img src="https://imarticus.org/blog/wp-content/uploads/2022/05/cyber-security-experts.jpg" alt="Cybersecurity experts illustration">
+      <ul>
+        <li><strong>Cultural:</strong> Overreliance on digital platforms without understanding risks fosters a digital dependency.</li>
+        <li><strong>Economic:</strong> Students and families risk financial loss from online scams or identity theft.</li>
+        <li><strong>Political:</strong> Data breaches may lead to misuse of personal information, affecting civic engagement.</li>
+        <li><strong>Social:</strong> Low trust in online platforms may discourage students from engaging in beneficial digital activities.</li>
+      </ul>
+      <p>Research by Omorog & Medina (2017) and reports by DICT (2023) confirm that a lack of formal cybersecurity education and comprehensive awareness campaigns is a major contributing factor. While small-scale initiatives exist locally, they are not standardized across schools, resulting in unequal exposure to cybersecurity knowledge.</p>
+    </div>
+  </div>
+
+  <!-- Solution Options -->
+  <div class="accordion">
+    <div class="accordion-header">2. Solution Options</div>
+    <div class="accordion-content">
+      <p>To address the issue, several solutions were considered to improve students' cybersecurity awareness:</p>
+      <img src="https://www.cyberdb.co/wp-content/uploads/2023/12/The-Need-for-Cybersecurity-Education-in-Undergraduate-Programs_V1.png" alt="Cybersecurity education illustration">
+      <ul>
+        <li><strong>Integrate cybersecurity into ICT curriculum:</strong> Incorporate lessons on password safety, phishing awareness, data privacy, and ethical online behavior into daily classes, ensuring consistent and structured learning.</li>
+        <li><strong>Nationwide awareness campaigns:</strong> Organize CyberSafe PH-style seminars, social media campaigns, and posters to reach students widely, raising awareness in an engaging manner.</li>
+        <li><strong>Student Cyber Ambassador Program:</strong> Train select students to act as peer educators, promoting safe online habits and creating a culture of responsibility, inspired by successful programs in Singapore and the UK.</li>
+      </ul>
+      <p>While campaigns and ambassadors provide reinforcement, curriculum integration ensures long-term sustainability and builds foundational knowledge in cybersecurity practices.</p>
+    </div>
+  </div>
+
+  <!-- Final Solution -->
+  <div class="accordion">
+    <div class="accordion-header">3. Final Solution</div>
+    <div class="accordion-content">
+      <p>After evaluating the proposed options, the most effective solution is <strong>the integration of cybersecurity education into the school curriculum</strong>. This structured approach guarantees that students receive continuous training and build essential skills to protect personal data and act responsibly online. Supporting initiatives, such as national campaigns and student ambassadors, complement the curriculum by providing practical experiences, peer engagement, and reinforcement of learned concepts.</p>
+      <img src="https://img.myshopline.com/image/store/1678977972998/Cyber-Security-Training-for-Employees.jpeg?w=1200&h=799" alt="Cybersecurity training illustration">
+    </div>
+  </div>
+
+  <!-- SMART Evaluation -->
+  <div class="accordion">
+    <div class="accordion-header">4. SMART Evaluation of Final Solution</div>
+    <div class="accordion-content">
+      <ul>
+        <li><strong>Specific:</strong> Clear ICT modules focusing on cybersecurity principles and practical online safety skills.</li>
+        <li><strong>Measurable:</strong> Student learning outcomes measured via pre- and post-assessments and behavioral observations.</li>
+        <li><strong>Achievable:</strong> Feasible through teacher training, lesson plans, and administrative support.</li>
+        <li><strong>Relevant:</strong> Addresses the critical need for cybersecurity knowledge among students and aligns with DICT and DepEd standards.</li>
+        <li><strong>Time-bound:</strong> Implementation structured over one academic year, with evaluations at regular intervals.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- References -->
+  <div class="accordion">
+    <div class="accordion-header">References</div>
+    <div class="accordion-content">
+      <ul>
+        <li>DICT. CyberSafePH Campaign Materials.</li>
+        <li>PIA. Cybersecurity Awareness Releases.</li>
+        <li>Singapore CSA. Student Cyber Wellness and Ambassador Program.</li>
+        <li>CISA. Cybersecurity Education Resources.</li>
+        <li>Omorog & Medina (2017). Cybersecurity awareness among university students.</li>
+        <li>Kraus, S., Jones, P., & Kailer, N. (2023). Digital skills and cybersecurity literacy in global education. arXiv.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const headers = document.querySelectorAll('.accordion-header');
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      header.classList.toggle('active');
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
